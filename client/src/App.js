@@ -14,6 +14,7 @@ const App = () => {
   // Function to handle form submission
   const handleSubmit = async (event) => {
     setIsPressed(true);
+    setMessage('Processing');
     event.preventDefault(); // Preventing default form submission behavior
     // Creating query parameters for the API request
     const queryParams = new URLSearchParams({ folder_url, gradebook_url }).toString();
