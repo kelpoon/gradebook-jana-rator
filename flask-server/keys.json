@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "gradebookjanarator",
+  "private_key_id": "18722edaa15d0dc29ac44255d90eea38b4ab76b1",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQCF/A5vQA1zXglG\n9foGFg56Q5tdVH+2vueOapA8PqPKRqp6EMgcbjg7pnZXaZfTM0uTBJ+NhAVXrtKt\nbrnker7fOBqoivOCeyfBlVHYBfh1fGrcWF2yIScY1pJfSpT+X/raXrbYmP815Cz+\n2A5PniFiP3PKC2ykvCnyueh7M/OCGfulg8a5MgqoXLIEN/s/l0FW9lN8oEf/eNia\nDFzRh4n6elYujVEGu9KiyHcPVpSY3fQDPAI5ajjR/aRQksmwOmhMTJ9L7MBt4LFN\nxujqm8FFrt3WRyGwEJ8Xc8qRVsBcXeVb4uUSJl7UAq3Xm9pvaEsSwHMvZ8oVMn8O\nApfgcrf1AgMBAAECggEAM0Jwf02BF98lK3nV0thDZ7FP0lAOoGq/CjRoxDOu1Cde\n915OQNpGN0QDSIQEau/X/QIqzKhyps4imemfwvLW7W14fXzTltrpJd2rtzrpiIE2\nHODNz+VxIMaOr1hIUl2ECmFsEMfP8908/a7JItq7qOvfr6/ZO9klL1DCycfhZKdg\ncjD5lOaQEomAHHBGLn/0OBM6ueJ++hQxCYXNH3YVCZrOwTff+VJSbDbNfW1rwXt0\nISlAIcSSB5rRgMT5/eL03X5IGLzeGGiQFQm+dubC1zB9gUCqw7OddvtpPFy+Jzn+\ntMWY+BYFw0xdsItcRs4KICKrdglvt8Aphnfhv2cLbQKBgQC5XTvv98NDGkiQXkBO\nt+AGIwNl3nPYOs1hjBnciYKGRHst3la7ng2RELWL/wMYY6GgH8H+F8duYnasFFac\nGGJIYlasWOboTUZuGgAMWAO9foc9WG2q+Q0xq0NZR7boP1VdHcCCTHQprkHOQetX\ncBa1c1yGIYbmRRGh3tUhgQGejwKBgQC5CptXEXqne9j8x6rYnrpmN9g7B8Pa5dnm\nWTKvmlT++gIimwbrpwAqNEfkRYriP+H7UbOww9khpjbrs45+vCG7gJmvComJdH4z\nLSRXSELnwGHOxExJjS2qT2CaDIl9JBZJN7WBzeKA2kx/b7JnBQ230zBOsnz3HlmO\n7+vcGBCDOwKBgQCCRGR/8yYVfV4rnyEgcRaOGYMkzx2og0Kc4CG4nCbPh0bt6EgZ\n2Cx+mziK5y9cr4ABkO/7SujLyYTO0AhB8Nz5M6rnuh6keNIbREhuZFhUjpwqX3/K\n3PYJxuswzjZbp06tfuAwcdxdAmqasjbbHxnGcQk/9kXgg/+tO3Wa8xeZPwKBgQCR\n0tEOcaDmYkxjEPsLkTM2IOZPxtPLKv5ocHzoNEitU9rg6KkwhsAzglXxh/hmSo/N\nXdqs//qacQGxCCTQrXQr7rGuZzByWZKmw/lyq2jGeC7cIog4IoENSVbIr/6d1xWV\nB8kLjXPltaM5fo3qb+oaptzX+ANRP+K2KU8HeRNyRwKBgQC1senNTTHrSvE895O8\njTzUC8FXQcotHhD8K8mTbNPvEkaGEny2BimWehcGcq/26T6Vsd63K60uyQdkPa+j\nvfjHPD85u0UQcOUWDxZLGVaQXUqQD5r0ZnXWf+oIu/NAiSVIlloFQg+61ocTWIfP\nqZ165sNJBICNNpMkCsFPOTZNUQ==\n-----END PRIVATE KEY-----\n",
+  "client_email": "service@gradebookjanarator.iam.gserviceaccount.com",
+  "client_id": "108384659696759805296",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/service%40gradebookjanarator.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
