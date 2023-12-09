@@ -19,7 +19,7 @@ const App = () => {
     // Creating query parameters for the API request
     const queryParams = new URLSearchParams({ folder_url, gradebook_url }).toString();
     // Constructing the request URL with query parameters
-    const requestUrl = `http://127.0.0.1:5000/run_gradebook?${queryParams}`;
+    const requestUrl = `http://173.8.188.76:5000//run_gradebook?${queryParams}`;
 
     try {
       // Making an asynchronous request to the server
