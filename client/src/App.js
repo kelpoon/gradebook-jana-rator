@@ -9,9 +9,11 @@ const App = () => {
   const [folder_url, setFolderUrl] = useState(''); // Variable for storing the folder ID
   const [gradebook_url, setGradebookUrl] = useState(''); // Variable for storing the gradebook ID
   const [message, setMessage] = useState(''); // Variable for storing messages to display to the user
+  const [isPressed, setIsPressed] = useState(false);
 
   // Function to handle form submission
   const handleSubmit = async (event) => {
+    setIsPressed(true);
     event.preventDefault(); // Preventing default form submission behavior
     // Creating query parameters for the API request
     const queryParams = new URLSearchParams({ folder_url, gradebook_url }).toString();
@@ -29,6 +31,8 @@ const App = () => {
       setMessage('Failed to process request'); // Setting error message
     }
   };
+
+  const buttonStyle = isPressed ? { backgroundColor: 'green', color: 'white' } : {};
 
   // HTML: Render method for the component
   return (
@@ -62,7 +66,7 @@ const App = () => {
             </label>
           </div>
 
-          <button type="submit">Run Gradebook</button>
+          <button style={buttonStyle} type="submit">Run Gradebook</button>
         </form>
         {message && <p>{message}</p>}
       </header>
