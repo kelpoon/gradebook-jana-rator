@@ -28,8 +28,8 @@ from pathlib import Path
 # *************************************************************** #
 # Input variables
 
-lightColor = "light green" #4
-darkColor = "red" #dark green = 11
+lightColor = 7 #yellow means partial credit
+darkColor = 4 #green means full credit
 
 # Default folder and spreadsheet IDs
 # folderLink = '1tyeoX2ZgmgSW57cS8z-r4S_Z6hKPl2yo'
@@ -283,18 +283,22 @@ def run_rubricReaderWriter(folder_url, gradebook_url):
                             
                             #manually checking cases to determine score for the paragraph
                             if len(colors_foundational) == 1:
+                                print(run.text)
+                                print(colors_foundational)
                                 if colors_foundational[0] == darkColor:
                                     highlightedFoundationals.append((text,1))
                                 if colors_foundational[0] == lightColor:
                                     highlightedFoundationals.append((text,.5))
                                 
                             elif len(colors_foundational) > 1:
-                                if darkColor and lightColor in colors_foundational:
+                                print(run.text)
+                                print(colors_foundational)
+                                if darkColor in colors_foundational and lightColor in colors_foundational:
                                     highlightedFoundationals.append((text,.75))
                                 elif darkColor in colors_foundational:
                                     highlightedFoundationals.append((text,.5))
                                 elif lightColor in colors_foundational:
-                                    highlightedFoundationals.append([text,.25])
+                                    highlightedFoundationals.append((text,.25))
                             
 
                             if len(colors_proficient) == 1:
@@ -304,7 +308,7 @@ def run_rubricReaderWriter(folder_url, gradebook_url):
                                     highlightedProficients.append((text,.5))
                                 
                             elif len(colors_proficient) > 1:
-                                if darkColor and lightColor in colors_proficient:
+                                if darkColor in colors_proficient and lightColor in colors_proficient:
                                     highlightedProficients.append((text,.75))
                                 elif darkColor in colors_proficient:
                                     highlightedProficients.append((text,.5))
@@ -319,14 +323,14 @@ def run_rubricReaderWriter(folder_url, gradebook_url):
 
                                 
                             elif len(colors_exemplary) > 1:
-                                if darkColor and lightColor in colors_exemplary:
+                                if darkColor in colors_exemplary and lightColor in colors_exemplary:
                                     highlightedExemplarys.append((text,.75))
                                 elif darkColor in colors_exemplary:
                                     highlightedExemplarys.append((text,.5))
                                 elif lightColor in colors_exemplary:
                                     highlightedExemplarys.append((text,.25))
-                        # More debug code
 
+                        # More debug code
                         # for r2, run in enumerate(paragraph.runs):
                         #     if run.font.highlight_color is not None:
                         #         print(
@@ -335,6 +339,7 @@ def run_rubricReaderWriter(folder_url, gradebook_url):
                         #     else:
                         #         if SHOW_EVERYTHING_INCLUDING_NON_HIGHLIGHTED:
                         #             print(" Table %d, Row %d, Cell %d, Paragraph %d, Run %d: %s" % (t, r, c, p, r2, run.text))
+
             # put all the scores in one list
             allFoundational.append(highlightedFoundationals)
             allProficients.append(highlightedProficients)
