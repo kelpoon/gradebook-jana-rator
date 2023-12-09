@@ -36,3 +36,13 @@
     transform: rotate(360deg);
   }
 }
+
+.long-input {
+  width: 100%; /* Full width on small screens */
+}
+
+@media (min-width: 600px) {
+  .long-input {
+      width: 50%; /* Adjust width for larger screens */
+  }
+}

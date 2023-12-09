@@ -49,6 +49,7 @@ const App = () => {
               Google Drive Rubrics Folder ID:
               <input
                 type="text"
+                className="long-input"
                 value={folder_url}
                 onChange={(e) => setFolderUrl(e.target.value)}
               />
@@ -60,6 +61,7 @@ const App = () => {
               Google Sheets Gradebook ID:
               <input
                 type="text"
+                className="long-input"
                 value={gradebook_url}
                 onChange={(e) => setGradebookUrl(e.target.value)}
               />

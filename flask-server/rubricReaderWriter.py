@@ -28,8 +28,8 @@ from pathlib import Path
 # *************************************************************** #
 # Input variables
 
-lightColor = 4
-darkColor = 11
+lightColor = "light green" #4
+darkColor = "red" #dark green = 11
 
 # Default folder and spreadsheet IDs
 # folderLink = '1tyeoX2ZgmgSW57cS8z-r4S_Z6hKPl2yo'
