@@ -13,6 +13,7 @@ from pydrive.auth import GoogleAuth
 from pydrive.drive import GoogleDrive
 import os
 import os.path
+import glob
 from google.auth.transport.requests import Request
 from google.oauth2.credentials import Credentials
 from google_auth_oauthlib.flow import InstalledAppFlow
@@ -163,6 +164,14 @@ def calculateScoreFromHighlights(highlights):
         score += h[1]
     return score
 
+def deleteAllFilesInDriveDownload():
+    # Pattern to match all files
+    for file_path in glob.glob(os.path.join(folderRoot, '*')):
+        try:
+            os.remove(file_path)
+        except Exception as e:
+            print(f"Error occurred while deleting file {file_path}: {e}")
+
 # *************************************************************** #
 
 SHOW_EVERYTHING_INCLUDING_NON_HIGHLIGHTED = False
@@ -185,6 +194,7 @@ EXTENSIONS = {
 }
 
 def run_rubricReaderWriter(folder_url, gradebook_url):
+    deleteAllFilesInDriveDownload()
 # creating the folder, downloading files from drive
     drive = authenticate()
 
